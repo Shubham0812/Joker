@@ -80,6 +80,11 @@ body {
   cursor: pointer;
 }
 
+.navigation:last-child{
+    padding-left: 100px;
+    color: red;
+}
+
 .summary {
   margin-left: 90px;
   margin-top: 20px;
@@ -94,4 +99,6 @@ body {
 
 .summary > div > h2{
   margin-left: 85px;
+  font-weight: 900;
+  font-size: 1.5rem;
 }
