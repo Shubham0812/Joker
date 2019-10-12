@@ -260,6 +260,11 @@ body {
     margin-top: 10px;
   }
 }
+@media only screen and (max-width: 432px) {
+  .summary {
+    margin-right: 45px;
+  }
+}
 
 .summary > p {
   width: 380px;
