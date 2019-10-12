@@ -5,7 +5,6 @@
 html,
 body {
   width: 100%;
-  height: 100%;
   color: white;
   background: #000;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -28,7 +27,7 @@ body {
 @media only screen and (max-width: 1024px) {
   .container {
     background-size: cover;
-    background-position-x: -160px;
+    background-position-x: 245px;
   }
 }
 @media only screen and (max-width: 1000px) {
@@ -110,6 +109,23 @@ body {
   }
 }
 
+.flex-container > h1 {
+  font-size: 10rem;
+  font-family: "Roboto Condensed", sans-serif;
+  letter-spacing: -2px;
+  text-shadow: 0px 2px 5px black;
+}
+@media only screen and (max-width: 658px) {
+  .flex-container > h1 {
+    font-size: 6rem;
+  }
+}
+@media only screen and (max-width: 432px) {
+  .flex-container > h1 {
+    font-size: 4.5rem;
+  }
+}
+
 .date-container {
   border: 1px solid palevioletred;
   height: 100px;
@@ -176,23 +192,6 @@ body {
   }
 }
 
-.flex-container > h1 {
-  font-size: 10rem;
-  font-family: "Roboto Condensed", sans-serif;
-  letter-spacing: -2px;
-  text-shadow: 0px 2px 5px black;
-}
-@media only screen and (max-width: 658px) {
-  .flex-container > h1 {
-    font-size: 6rem;
-  }
-}
-@media only screen and (max-width: 432px) {
-  .flex-container > h1 {
-    font-size: 4.5rem;
-  }
-}
-
 .navigation {
   display: flex;
   padding-top: 32px;
@@ -203,7 +202,17 @@ body {
   }
 }
 
-.navigation > p {
+.navigation > a:visited,
+.navigation > a:active,
+.navigation > a:hover {
+  color: white;
+}
+
+.navigation > a {
+  text-decoration: none;
+}
+
+.navigation > a > p {
   padding: 0 60px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   opacity: 0.4;
@@ -211,28 +220,28 @@ body {
   transition: 0.3s ease-in-out;
 }
 @media only screen and (max-width: 768px) {
-  .navigation > p {
+  .navigation > a > p {
     padding: 0 55px;
   }
 }
 @media only screen and (max-width: 700px) {
-  .navigation > p {
+  .navigation > a > p {
     padding: 0 45px;
   }
 }
 @media only screen and (max-width: 658px) {
-  .navigation > p {
+  .navigation > a > p {
     padding: 0 15px;
     opacity: 0.9;
   }
 }
 @media only screen and (max-width: 403px) {
-  .navigation > p {
+  .navigation > a > p {
     padding: 0 8px;
   }
 }
 
-.navigation > p:hover {
+.navigation > a > p:hover {
   opacity: 0.7;
 }
 
@@ -377,7 +386,13 @@ body {
   padding: 12px 40px;
   letter-spacing: 2.5px;
   cursor: pointer;
+  opacity: 0.4;
+  transition: 0.3s ease-in-out;
   text-shadow: 1px 2px 5px #221;
+}
+
+.other-info > div > p:hover {
+  opacity: 0.9;
 }
 
 .other-info > iframe {
