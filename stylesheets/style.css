@@ -19,6 +19,36 @@ body {
   height: 100%;
   width: 100%;
 }
+@media only screen and (max-width: 1208px) {
+  .container {
+    background-size: cover;
+    background-position-x: 300px;
+  }
+}
+@media only screen and (max-width: 856px) {
+  .container {
+    background-size: cover;
+    background-position-x: 200px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .container {
+    background-size: cover;
+    background-position-x: 0px;
+  }
+}
+@media only screen and (max-width: 736px) {
+  .container {
+    background-size: cover;
+    background-position-x: 200px;
+  }
+}
+@media only screen and (max-width: 515px) {
+  .container {
+    background-size: cover;
+    background-position-x: -200px;
+  }
+}
 
 .container::before {
   content: "JOKER";
@@ -31,11 +61,31 @@ body {
   left: -180px;
   letter-spacing: -20px;
 }
+@media only screen and (max-width: 823px) {
+  .container::before {
+    font-size: 20em;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .container::before {
+    font-size: 15em;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .container::before {
+    font-size: 5em;
+  }
+}
 
 .flex-container {
   margin-top: 60px;
   margin-left: 80px;
   display: flex;
+}
+@media only screen and (max-width: 768px) {
+  .flex-container {
+    margin-left: 30px;
+  }
 }
 
 .date-container {
@@ -49,6 +99,11 @@ body {
   flex-wrap: wrap;
   font-family: "Roboto Condensed", sans-serif;
 }
+@media only screen and (max-width: 768px) {
+  .date-container {
+    margin-left: 30px;
+  }
+}
 
 .date-container > h4 {
   font-size: 1.7rem;
@@ -57,6 +112,11 @@ body {
 
 .date-container > h2 {
   font-size: 3.9rem;
+}
+@media only screen and (max-width: 768px) {
+  .date-container > h2 {
+    color: seagreen;
+  }
 }
 
 .flex-container > h1 {
@@ -88,6 +148,11 @@ body {
   margin-top: 20px;
   display: flex;
 }
+@media only screen and (max-width: 768px) {
+  .summary {
+    margin-left: 45px;
+  }
+}
 
 .summary > p {
   width: 380px;
@@ -95,17 +160,69 @@ body {
   opacity: 0.4;
 }
 
-.summary > div > h2 {
+.summary > .trailer > h2 {
   margin-left: 85px;
   font-weight: 900;
   font-size: 2rem;
   font-family: "Fira Sans", sans-serif;
 }
+@media only screen and (max-width: 768px) {
+  .summary > .trailer > h2 {
+    margin-left: 30px;
+  }
+}
+
+.trailer-2 {
+  visibility: hidden;
+  font-weight: 900;
+  font-size: 1.5rem;
+  font-family: "Fira Sans", sans-serif;
+}
+@media only screen and (max-width: 768px) {
+  .trailer-2 {
+    margin-left: 30px;
+    visibility: visible;
+  }
+}
 
 .other-info {
   display: flex;
-  margin-left: 550px;
-  margin-top: -50px;
+  margin-left: 90px;
+  margin-top: 20px;
+}
+@media only screen and (max-width: 768px) {
+  .other-info {
+    display: block;
+    margin-left: 45px;
+  }
+}
+
+.other-info > div > div > h2 {
+  font-weight: 100;
+  font-family: "Fira Sans", sans-serif;
+  letter-spacing: -1px;
+}
+
+.other-info > div > p {
+  border: 1px solid white;
+  height: 24px;
+  font-family: "Roboto Condensed", sans-serif;
+  margin-left: 32px;
+  padding: 12px 40px;
+  letter-spacing: 2.5px;
+  cursor: pointer;
+  text-shadow: 1px 2px 5px #221;
+}
+
+.other-info > iframe {
+  margin-top: -70px;
+  margin-left: -75px;
+}
+@media only screen and (max-width: 768px) {
+  .other-info > iframe {
+    margin: 0;
+    margin-top: 30px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
