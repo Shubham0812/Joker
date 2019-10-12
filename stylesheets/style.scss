@@ -81,6 +81,10 @@ body {
     margin-left: 30px;
   }
 
+  @media only screen and (max-width: 432px) {
+    display: block;
+  }
+
   @media only screen and (max-width: 360px) {
     margin-top: 22px;
   }
@@ -110,6 +114,7 @@ body {
   @media only screen and (max-width: 432px) {
     width: 80px;
     margin-top: 13px;
+    margin-left: 18px;
   }
 }
 
@@ -121,7 +126,6 @@ body {
   }
   @media only screen and (max-width: 432px) {
     font-size: 1.09rem;
-    color: seagreen;
   }
 }
 
@@ -136,6 +140,7 @@ body {
   }
   @media only screen and (max-width: 432px) {
     font-size: 2.1rem;
+    color: white;
   }
 }
 
@@ -182,6 +187,9 @@ body {
     padding: 0 15px;
     opacity: 0.9;
   }
+  @media only screen and (max-width: 403px) {
+    padding: 0 8px;
+  }
 }
 
 .navigation > p:hover {
@@ -210,7 +218,7 @@ body {
     opacity: 0.9;
   }
 
-  @media only screen and (max-width: 360px) {
+  @media only screen and (max-width: 432px) {
     text-shadow: 2px 2px 3px black;
   }
 }
@@ -218,6 +226,10 @@ body {
 .trailer {
   @media only screen and (max-width: 825px) {
     width: 350px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    display: none;
   }
 }
 
@@ -256,7 +268,7 @@ body {
   }
 
   @media only screen and (max-width: 432px) {
-    margin-top: 20px;
+    margin-top: 28px;
     margin-left: 0;
   }
 }
@@ -270,7 +282,7 @@ body {
     margin-left: 45px;
   }
   @media only screen and (max-width: 432px) {
-    margin-top: 10px;
+    margin-top: 32px;
   }
 }
 
@@ -281,6 +293,12 @@ body {
   }
   @media only screen and (max-width: 432px) {
     flex-wrap: wrap;
+  }
+}
+
+.other-info > div > .price {
+  @media only screen and (min-width: 600px) and (max-width: 645px) {
+    width: 100px;
   }
 }
 

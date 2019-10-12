@@ -99,6 +99,11 @@ body {
     margin-left: 30px;
   }
 }
+@media only screen and (max-width: 432px) {
+  .flex-container {
+    display: block;
+  }
+}
 @media only screen and (max-width: 360px) {
   .flex-container {
     margin-top: 22px;
@@ -132,6 +137,7 @@ body {
   .date-container {
     width: 80px;
     margin-top: 13px;
+    margin-left: 18px;
   }
 }
 
@@ -147,7 +153,6 @@ body {
 @media only screen and (max-width: 432px) {
   .date-container > h4 {
     font-size: 1.09rem;
-    color: seagreen;
   }
 }
 
@@ -167,6 +172,7 @@ body {
 @media only screen and (max-width: 432px) {
   .date-container > h2 {
     font-size: 2.1rem;
+    color: white;
   }
 }
 
@@ -220,6 +226,11 @@ body {
     opacity: 0.9;
   }
 }
+@media only screen and (max-width: 403px) {
+  .navigation > p {
+    padding: 0 8px;
+  }
+}
 
 .navigation > p:hover {
   opacity: 0.7;
@@ -251,7 +262,7 @@ body {
     opacity: 0.9;
   }
 }
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 432px) {
   .summary > p {
     text-shadow: 2px 2px 3px black;
   }
@@ -260,6 +271,11 @@ body {
 @media only screen and (max-width: 825px) {
   .trailer {
     width: 350px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .trailer {
+    display: none;
   }
 }
 
@@ -300,7 +316,7 @@ body {
 }
 @media only screen and (max-width: 432px) {
   .trailer-2 {
-    margin-top: 20px;
+    margin-top: 28px;
     margin-left: 0;
   }
 }
@@ -318,7 +334,7 @@ body {
 }
 @media only screen and (max-width: 432px) {
   .other-info {
-    margin-top: 10px;
+    margin-top: 32px;
   }
 }
 
@@ -333,6 +349,12 @@ body {
 @media only screen and (max-width: 432px) {
   .other-info > div {
     flex-wrap: wrap;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 645px) {
+  .other-info > div > .price {
+    width: 100px;
   }
 }
 
