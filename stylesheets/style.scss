@@ -25,6 +25,14 @@ body {
     background-size: cover;
     background-position-x: 300px;
   }
+  @media only screen and (max-width: 1024px) {
+    background-size: cover;
+    background-position-x: -160px;
+  }
+  @media only screen and (max-width: 1000px) {
+    background-size: cover;
+    background-position-x: 300px;
+  }
   @media only screen and (max-width: 856px) {
     background-size: cover;
     background-position-x: 200px;
@@ -172,6 +180,7 @@ body {
 
   @media only screen and (max-width: 658px) {
     padding: 0 15px;
+    opacity: 0.9;
   }
 }
 
@@ -187,12 +196,16 @@ body {
   @media only screen and (max-width: 768px) {
     margin-left: 45px;
   }
+  @media only screen and (max-width: 731px) {
+    margin-top: 10px;
+  }
 }
 
 .summary > p {
   width: 380px;
   line-height: 1.8;
   opacity: 0.4;
+
   @media only screen and (max-width: 515px) {
     opacity: 0.9;
   }
@@ -202,11 +215,21 @@ body {
   }
 }
 
+.trailer {
+  @media only screen and (max-width: 825px) {
+    width: 350px;
+  }
+}
+
 .summary > .trailer > h2 {
   margin-left: 85px;
   font-weight: 900;
   font-size: 2rem;
   font-family: "Fira Sans", sans-serif;
+
+  @media only screen and (max-width: 825px) {
+    margin-left: 60px;
+  }
 
   @media only screen and (max-width: 768px) {
     margin-left: 30px;
@@ -224,9 +247,9 @@ body {
     margin-left: 30px;
     visibility: visible;
   }
-  @media only screen and (max-width: 658px) {
-    width: 260px;
-  }
+  // @media only screen and (max-width: 658px) {
+  //   width: 260px;
+  // }
 
   @media only screen and (max-width: 516px) {
     font-size: 24px;
@@ -245,6 +268,9 @@ body {
   @media only screen and (max-width: 768px) {
     display: block;
     margin-left: 45px;
+  }
+  @media only screen and (max-width: 432px) {
+    margin-top: 10px;
   }
 }
 
@@ -269,11 +295,6 @@ body {
   }
 }
 
-.other-info > div > div {
-  @media only screen and (max-width: 658px) {
-    width: 100px;
-  }
-}
 .other-info > div > p {
   border: 1px solid white;
   height: 24px;
@@ -288,6 +309,11 @@ body {
 .other-info > iframe {
   margin-top: -70px;
   margin-left: -140px;
+
+  @media only screen and (max-width: 825px) {
+    margin-top: -40px;
+    margin-left: -164px;
+  }
 
   @media only screen and (max-width: 768px) {
     margin: 0;

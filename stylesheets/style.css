@@ -25,6 +25,18 @@ body {
     background-position-x: 300px;
   }
 }
+@media only screen and (max-width: 1024px) {
+  .container {
+    background-size: cover;
+    background-position-x: -160px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .container {
+    background-size: cover;
+    background-position-x: 300px;
+  }
+}
 @media only screen and (max-width: 856px) {
   .container {
     background-size: cover;
@@ -205,6 +217,7 @@ body {
 @media only screen and (max-width: 658px) {
   .navigation > p {
     padding: 0 15px;
+    opacity: 0.9;
   }
 }
 
@@ -220,6 +233,11 @@ body {
 @media only screen and (max-width: 768px) {
   .summary {
     margin-left: 45px;
+  }
+}
+@media only screen and (max-width: 731px) {
+  .summary {
+    margin-top: 10px;
   }
 }
 
@@ -239,11 +257,22 @@ body {
   }
 }
 
+@media only screen and (max-width: 825px) {
+  .trailer {
+    width: 350px;
+  }
+}
+
 .summary > .trailer > h2 {
   margin-left: 85px;
   font-weight: 900;
   font-size: 2rem;
   font-family: "Fira Sans", sans-serif;
+}
+@media only screen and (max-width: 825px) {
+  .summary > .trailer > h2 {
+    margin-left: 60px;
+  }
 }
 @media only screen and (max-width: 768px) {
   .summary > .trailer > h2 {
@@ -262,11 +291,6 @@ body {
   .trailer-2 {
     margin-left: 30px;
     visibility: visible;
-  }
-}
-@media only screen and (max-width: 658px) {
-  .trailer-2 {
-    width: 260px;
   }
 }
 @media only screen and (max-width: 516px) {
@@ -290,6 +314,11 @@ body {
   .other-info {
     display: block;
     margin-left: 45px;
+  }
+}
+@media only screen and (max-width: 432px) {
+  .other-info {
+    margin-top: 10px;
   }
 }
 
@@ -318,12 +347,6 @@ body {
   }
 }
 
-@media only screen and (max-width: 658px) {
-  .other-info > div > div {
-    width: 100px;
-  }
-}
-
 .other-info > div > p {
   border: 1px solid white;
   height: 24px;
@@ -338,6 +361,12 @@ body {
 .other-info > iframe {
   margin-top: -70px;
   margin-left: -140px;
+}
+@media only screen and (max-width: 825px) {
+  .other-info > iframe {
+    margin-top: -40px;
+    margin-left: -164px;
+  }
 }
 @media only screen and (max-width: 768px) {
   .other-info > iframe {
