@@ -13,8 +13,8 @@ body {
 }
 
 .container {
-  // background: url("/assets/joker-cover.jpg");
-  background: url("https://raw.githubusercontent.com/Shubham0812/Joker/master/assets/joker-cover.jpg");
+  background: url("/assets/joker-cover.jpg");
+  // background: url("https://raw.githubusercontent.com/Shubham0812/Joker/master/assets/joker-cover.jpg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position-x: 615px;
@@ -72,6 +72,10 @@ body {
   @media only screen and (max-width: 768px) {
     margin-left: 30px;
   }
+
+  @media only screen and (max-width: 360px) {
+    margin-top: 22px;
+  }
 }
 
 .date-container {
@@ -88,11 +92,29 @@ body {
   @media only screen and (max-width: 768px) {
     margin-left: 30px;
   }
+
+  @media only screen and (max-width: 658px) {
+    height: 57px;
+    width: 96px;
+    margin-top: 17px;
+  }
+
+  @media only screen and (max-width: 432px) {
+    width: 80px;
+    margin-top: 13px;
+  }
 }
 
 .date-container > h4 {
   font-size: 1.7rem;
   font-weight: 900;
+  @media only screen and (max-width: 658px) {
+    font-size: 1.3rem;
+  }
+  @media only screen and (max-width: 432px) {
+    font-size: 1.09rem;
+    color: seagreen;
+  }
 }
 
 .date-container > h2 {
@@ -101,6 +123,12 @@ body {
   @media only screen and (max-width: 768px) {
     color: seagreen;
   }
+  @media only screen and (max-width: 658px) {
+    font-size: 2.5rem;
+  }
+  @media only screen and (max-width: 432px) {
+    font-size: 2.1rem;
+  }
 }
 
 .flex-container > h1 {
@@ -108,11 +136,22 @@ body {
   font-family: "Roboto Condensed", sans-serif;
   letter-spacing: -2px;
   text-shadow: 0px 2px 5px black;
+
+  @media only screen and (max-width: 658px) {
+    font-size: 6rem;
+  }
+
+  @media only screen and (max-width: 432px) {
+    font-size: 4.5rem;
+  }
 }
 
 .navigation {
   display: flex;
   padding-top: 32px;
+  @media only screen and (max-width: 658px) {
+    padding-left: 32px;
+  }
 }
 
 .navigation > p {
@@ -122,6 +161,18 @@ body {
   opacity: 0.4;
   cursor: pointer;
   transition: 0.3s ease-in-out;
+
+  @media only screen and (max-width: 768px) {
+    padding: 0 55px;
+  }
+
+  @media only screen and (max-width: 700px) {
+    padding: 0 45px;
+  }
+
+  @media only screen and (max-width: 658px) {
+    padding: 0 15px;
+  }
 }
 
 .navigation > p:hover {
@@ -142,6 +193,13 @@ body {
   width: 380px;
   line-height: 1.8;
   opacity: 0.4;
+  @media only screen and (max-width: 515px) {
+    opacity: 0.9;
+  }
+
+  @media only screen and (max-width: 360px) {
+    text-shadow: 2px 2px 3px black;
+  }
 }
 
 .summary > .trailer > h2 {
@@ -152,19 +210,31 @@ body {
 
   @media only screen and (max-width: 768px) {
     margin-left: 30px;
-    opacity: 0;
+    display: none;
   }
 }
 
 .trailer-2 {
   visibility: hidden;
   font-weight: 900;
-  font-size: 1.5rem;
+  font-size: 36px;
   font-family: "Fira Sans", sans-serif;
 
   @media only screen and (max-width: 768px) {
     margin-left: 30px;
     visibility: visible;
+  }
+  @media only screen and (max-width: 658px) {
+    width: 260px;
+  }
+
+  @media only screen and (max-width: 516px) {
+    font-size: 24px;
+  }
+
+  @media only screen and (max-width: 432px) {
+    margin-top: 20px;
+    margin-left: 0;
   }
 }
 
@@ -179,8 +249,12 @@ body {
 }
 
 .other-info > div {
+  display: flex;
   @media only screen and (max-width: 768px) {
     align-items: center;
+  }
+  @media only screen and (max-width: 432px) {
+    flex-wrap: wrap;
   }
 }
 
@@ -188,8 +262,18 @@ body {
   font-weight: 100;
   font-family: "Fira Sans", sans-serif;
   letter-spacing: -1px;
+
+  @media only screen and (max-width: 515px) {
+    // font-size: 0.5rem;
+    font-size: 22px;
+  }
 }
 
+.other-info > div > div {
+  @media only screen and (max-width: 658px) {
+    width: 100px;
+  }
+}
 .other-info > div > p {
   border: 1px solid white;
   height: 24px;
@@ -203,10 +287,14 @@ body {
 
 .other-info > iframe {
   margin-top: -70px;
-  margin-left: -75px;
+  margin-left: -140px;
 
   @media only screen and (max-width: 768px) {
     margin: 0;
     margin-top: 30px;
+  }
+
+  @media only screen and (max-width: 432px) {
+    margin-top: 18px;
   }
 }
