@@ -12,7 +12,7 @@ body {
 }
 
 .container {
-  background: url("/assets/joker-cover.jpg");
+  background: url("https://raw.githubusercontent.com/Shubham0812/Joker/master/assets/joker-cover.jpg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position-x: 615px;
@@ -169,6 +169,7 @@ body {
 @media only screen and (max-width: 768px) {
   .summary > .trailer > h2 {
     margin-left: 30px;
+    opacity: 0;
   }
 }
 
@@ -194,6 +195,12 @@ body {
   .other-info {
     display: block;
     margin-left: 45px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .other-info > div {
+    align-items: center;
   }
 }
 
