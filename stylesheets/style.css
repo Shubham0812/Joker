@@ -12,7 +12,7 @@ body {
 }
 
 .container {
-  background: url("/assets/joker-cover.jpg");
+  background: url("https://raw.githubusercontent.com/Shubham0812/Joker/master/assets/joker-cover.jpg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position-x: 615px;
