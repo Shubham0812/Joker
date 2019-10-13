@@ -125,6 +125,7 @@ body {
 
 .navigation > a {
   text-decoration: none;
+  color: white;
 }
 
 .navigation > a > p {
