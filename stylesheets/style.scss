@@ -338,7 +338,20 @@ body {
   }
 }
 
-.other-info > div > p {
+
+
+.other-info > div > a:visited,
+.other-info > div > a:active,
+.other-info > div > a:hover {
+  color: white;
+}
+
+.other-info > div > a {
+  text-decoration: none;
+  color: white;
+}
+
+.other-info > div > a > p {
   border: 1px solid white;
   height: 24px;
   font-family: "Roboto Condensed", sans-serif;
@@ -351,7 +364,7 @@ body {
   text-shadow: 1px 2px 5px #221;
 }
 
-.other-info > div > p:hover {
+.other-info > div > a > p:hover {
   opacity: 0.9;
 }
 
