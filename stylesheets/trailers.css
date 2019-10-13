@@ -200,6 +200,7 @@ body {
 .trailer-container > iframe {
   width: 340px;
   height: 180px;
+  z-index: 2;
 }
 @media only screen and (max-width: 823px) {
   .trailer-container > iframe {
