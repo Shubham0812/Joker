@@ -5,6 +5,7 @@
 html,
 body {
   width: 100%;
+  height: 100%;
   color: white;
   background: #000;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -47,6 +48,10 @@ body {
   @media only screen and (max-width: 515px) {
     background-size: cover;
     background-position-x: -200px;
+  }
+    @media only screen and (max-width: 406px) {
+    background-size: cover;
+    background-position-x: -320px;
   }
 }
 
